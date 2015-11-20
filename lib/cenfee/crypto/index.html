@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<script src="cenfee/crypto/DiscuzCrypto.js"></script>
+<script src="cenfee/crypto/base64.js"></script>
+<script src="cenfee/crypto/md5.js"></script>
+<script>
+
+var discuzCrypto = new DiscuzCrypto();
+var txt = "This is a test"; 
+var key = "1bobi"; 
+
+var encrypt = discuzCrypto.encrypt(txt,key); 
+console.log(encrypt);
+
+console.log(discuzCrypto.decrypt(encrypt,key));
+
+</script>
+</head>
+
+<body>
+</body>
+</html>
